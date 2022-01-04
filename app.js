@@ -71,3 +71,77 @@ else if (age < 18 ){
 else {
   console.log('Please approach the registration desk, thanks!');
 }
+
+
+// DEFAULT PARAMETERS
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 ='eggs'){
+    console.log(`Remember to buy ${item1}`);
+    console.log(`Remember to buy ${item2}`);
+    console.log(`Remember to buy ${item3}`);
+  }
+
+  
+
+//  MULTIPLY PARAMETERS
+// function multiply(num1, num2){
+  function monitorCount(rows, columns) {
+    return rows * columns;
+  }
+  
+  const numOfMonitors = monitorCount(5, 4);
+  
+  console.log(numOfMonitors);
+  
+
+// HELPER Functions
+// We can also use the return value of a function inside 
+// another function. These functions being called within 
+// another function are often referred to as helper 
+// functions. Since each function is carrying 
+// out a specific task, it makes our code easier to read and 
+// debug if necessary.
+// ANSWER:4000
+function monitorCount(rows, columns) {
+    return rows * columns;
+  }
+  
+  function costOfMonitors(rows, columns) {
+   return monitorCount(rows, columns)  * 200;
+  }
+  
+  const totalCost = costOfMonitors(5, 4);
+  
+  console.log(totalCost);
+
+
+//    ****************************************************************
+//    ****************************************************************
+//    ****************************************************************
+
+// Create a variable named plantNeedsWater 
+// using the const variable keyword.
+// Create a variable named plantNeedsWater 
+// using the const variable keyword.
+const plantNeedsWater = function(day) {
+    if(day === 'Wednesday'){
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+  plantNeedsWater('Tuesday');
+  
+  console.log(plantNeedsWater('Tuesday'));
+
+//   ****************************************************************
+//   ****************************************************************
+// ARROW FUNCTIONS 
+// eliminiates the need for the function keyword
+  const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+  };
