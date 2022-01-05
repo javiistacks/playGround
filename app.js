@@ -145,3 +145,15 @@ const plantNeedsWater = function(day) {
       return false;
     }
   };
+
+
+//   ****************************************************************
+const plantNeedsWater = (day) => {
+    return day === 'Wednesday' ? true : false;
+  };
+
+//   concise body arrow function
+// below is the same as the above. we can shorten the code by using the arrow function
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+
