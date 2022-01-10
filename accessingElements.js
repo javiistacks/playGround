@@ -40,6 +40,7 @@ console.log(famousSayings);
 //prints ["Fortune favors the brave.", "A joke is a very serious thing.", "Where there is love there is life.", "NEW ELEMENT"]
 
 // we can remove an element from the end of an array using the pop method
+const removed = famousSayings.pop();
 famousSayings.pop();
 console.log(famousSayings);
 // prints ['A good joke is a very serious thing.', 'Where there is love I am there.']
@@ -58,4 +59,13 @@ console.log(famousSayings);
 // we can find the index of an element in an array using the indexOf method
 console.log(famousSayings.indexOf('A good joke is a very serious thing.'));
 // prints 1
-    
+
+// functions can also mutate arrays in the same way as we can mutate objects
+//lets write the function that will add a new element to the end of an array
+function addItem(arr, item) {
+    arr.push(item);
+}   // end of function  addItem
+// now we can call the function
+addItem(famousSayings, 'NEW ELEMENT');  // this will add the element to the end of the array
+console.log(famousSayings);
+// prints ['NEW ELEMENT23', 'A good joke is a very serious thing.', 'Where there is love I am there.', 'NEW ELEMENT']
