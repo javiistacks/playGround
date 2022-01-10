@@ -85,3 +85,25 @@ while ( currentCard != 'spade') {
   currentCard = cards[Math.floor(Math.random() * 4)];
 	console.log(currentCard);
 }
+
+
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+/*
+Log each element from rapperArray in a for loop with the iterator variable i
+*/
+for (let i = 0; i < rapperArray.length; i++){
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === 'Notorious B.I.G.'){
+    break;
+  }
+}
+
+
+console.log("And if you don't know, now you know.");
+//this prints
+// Lil'Kim
+// Jay-Z
+// Notorious B.I.G.
+// And if you don't know, now you know.
